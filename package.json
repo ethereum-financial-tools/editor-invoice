@@ -1,0 +1,27 @@
+{
+  "name": "invoice-editor",
+  "version": "0.0.0",
+  "description": "create and publish invoices",
+  "main": "src/invoice-editor.js",
+  "scripts": {
+    "start": "budo demo/demo.js:bundle.js --dir . --title $npm_package_name --force-default-index --ssl --live --open",
+    "build": "browserify demo/demo.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethereum-financial-tools/invoice-editor.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ethereum-financial-tools/invoice-editor/issues"
+  },
+  "homepage": "https://github.com/ethereum-financial-tools/invoice-editor#readme",
+  "dependencies": {
+    "bel": "^6.0.0",
+    "csjs-inject": "^1.0.1"
+  },
+  "devDependencies": {
+    "budo": "^11.6.1"
+  }
+}
